@@ -23,47 +23,77 @@
 #   nathos at nathos dot com
 
 thatsracist = [
-  "http://i.imgur.com/kVeKphq.gif",
+  "http://i.imgur.com/kVeKphq.gif"
   "http://i.imgur.com/xV3sl.gif"
+  "http://i2.kym-cdn.com/photos/images/newsfeed/000/157/122/f.gif"
 ]
 
 underconstruction = [
-  "http://i.imgur.com/zoPG6pa.gif",
-  "http://i.imgur.com/RDyyeQq.gif",
-  "http://i.imgur.com/CuTTnPu.gif",
+  "http://i.imgur.com/zoPG6pa.gif"
+  "http://i.imgur.com/RDyyeQq.gif"
+  "http://i.imgur.com/CuTTnPu.gif"
   "http://i.imgur.com/lzIHNlq.gif"
 ]
 
+orly = [
+  "http://i.imgur.com/a7bmz.jpg"
+  "http://files.myopera.com/drlaunch/albums/94593/thumbs/orry001.jpg_thumb.jpg"
+  "http://i616.photobucket.com/albums/tt249/NitroSquirril/o_rly_mario_flat.png"
+  "http://img.photobucket.com/albums/v717/muserock2005/O_RLY-Quite.jpg"
+  "http://www.animateit.net/data/media/august2009/th_orly.gif"
+  "http://www.brandsoftheworld.com/sites/default/files/o-rly-640x474.jpg"
+]
+
+winner = [
+  "http://drpop.org/wp-content/uploads/2010/11/wehaveawinner_img__620x300.jpg"
+  "http://www.bcon2010.com/uploaded_images/winner-701793.jpg"
+  "http://ropaxman.com/wp-content/uploads/2013/01/RoPaxman_We-have-a-winner.jpg"
+  "http://www.michelespaintshop.com/images/winner-2.gif"
+  "http://files.sharenator.com/we_have_a_winner_RE_Bear_Grylls_has_caught_on-s600x250-179219.jpg"
+]
+
+yay = [
+  "http://i.imgur.com/mBHknsc.gif"
+  "http://media.tumblr.com/tumblr_ljvvxcQGj71qf86qm.gif"
+  "http://media.tumblr.com/tumblr_m0f55scWAv1qmwb38.gif"
+  "http://img241.imageshack.us/img241/4059/rrw00t03.gif"
+  "http://mitadmissions.org/images/mit-blogs/yay.gif"
+  "http://media.tumblr.com/tumblr_m5oh7k978u1rrvu1a.gif"
+]
+
 module.exports = (robot) ->
-  robot.hear /that's racist|^thatsracist(.gif)?$/i, (msg) ->
+  robot.hear /that'?s ?racist(.gif)?$/i, (msg) ->
     msg.send msg.random thatsracist
 
-  robot.hear /eso es racista|^esoesracista(.gif)?$/i, (msg) ->
+  robot.hear /eso ?es ?racista(.gif)?$/i, (msg) ->
     msg.send "http://i.imgur.com/xmsoGe2.gif"
 
-  robot.hear /under construction|^underconstruction(.gif)?$/i, (msg) ->
+  robot.hear /under ?construction(.gif)?$/i, (msg) ->
     msg.send msg.random underconstruction
 
   robot.hear /^(a)\1{1,}h(.gif)?$/i, (msg) ->
     msg.send "http://i.imgur.com/NIlGIxG.gif"
 
-  robot.hear /good grief|^goodgrief(.gif)?$/i, (msg) ->
+  robot.hear /good ?grief(.gif)?$/i, (msg) ->
     msg.send "http://i.imgur.com/eWytvqb.gif"
 
   robot.hear /pops popcorn|^popcorn(.gif)?$|^popspopcorn(.gif)?$|^guspopcorn(.gif)?$|^popcorngus(.gif)?$/i, (msg) ->
     msg.send "http://i.imgur.com/GQRnYf8.gif"
 
   robot.hear /hooray|yay\!|^yay(.gif)?$|^hooray(.gif)?$/i, (msg) ->
-    msg.send "http://i.imgur.com/mBHknsc.gif"
+    msg.send msg.random yay
 
-  robot.hear /i will kill you|^iwillkillyou(.gif)?$/i, (msg) ->
+  robot.hear /i ?will ?kill ?you(.gif)?$/i, (msg) ->
     msg.send "http://i.imgur.com/dwbfY45.gif"
 
-  robot.hear /i'm out|^imout(.gif)?$/i, (msg) ->
+  robot.hear /i'?m ?out(.gif)?$/i, (msg) ->
     msg.send "http://i.imgur.com/veHeUoP.gif"
 
-  robot.hear /dis gon b gud|^disgonbgud(.gif)?$/i, (msg) ->
+  robot.hear /dis ?gon ?b ?gud(.gif)?$/i, (msg) ->
     msg.send "http://i.imgur.com/rFVchf2.gif"
 
+  robot.hear /o ?rly\??$/i, (msg) ->
+    msg.send msg.random orly
 
-
+  robot.hear /we have a winner$/i, (msg) ->
+    msg.send msg.random winner
