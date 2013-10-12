@@ -24,8 +24,8 @@
   },
 
   "dependencies": {
-    "hubot":         "~2.5.4",
-    "hubot-scripts": "~2.4.6",
+    "hubot":         ">= 2.5.4",
+    "hubot-scripts": ">= 2.4.6",
     "hubot-irc": "*",
     "htmlparser": "*",
     "soupselect": "*",
