@@ -36,8 +36,13 @@ imageMe = (msg, query, animated, faces, cb) ->
   msg.http('http://ajax.googleapis.com/ajax/services/search/images')
     .query(q)
     .get() (err, res, body) ->
-      images = JSON.parse(body)
-      images = images.responseData?.results
-      if images?.length > 0
-        image  = msg.random images
-        cb "#{image.unescapedUrl}"
+      try
+        images = JSON.parse(body)
+        images = images.responseData?.results
+        if images?.length
+          image  = msg.random images
+          cb "#{image.unescapedUrl}"
+        else
+          cb "No images found"
+      catch error
+        cb "Error: #{error.toString()}"
