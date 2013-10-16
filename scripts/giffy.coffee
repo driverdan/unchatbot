@@ -61,6 +61,10 @@ yay = [
   "http://media.tumblr.com/tumblr_m5oh7k978u1rrvu1a.gif"
 ]
 
+fuckyou = [
+  "http://i.imgur.com/MwTNGr8.gif"
+]
+
 module.exports = (robot) ->
   robot.hear /that'?s ?racist(.gif)?$/i, (msg) ->
     msg.send msg.random thatsracist
@@ -97,3 +101,6 @@ module.exports = (robot) ->
 
   robot.hear /we have a winner$/i, (msg) ->
     msg.send msg.random winner
+
+  robot.hear /fuck you$/i, (msg) ->
+    msg.send msg.random fuckyou
