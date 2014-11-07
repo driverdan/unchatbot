@@ -7,5 +7,5 @@ module.exports = (robot) ->
       uri: "http://coral.subsonicradio.com:23280/c/"
     , (error, response, body) ->
       $ = cheerio.load(body)
-      msg.send $("a[name=#{msg.match[2]}]").next().next().attr("src")
+      msg.send "http://coral.subsonicradio.com:23280" + $("a[name=#{msg.match[2]}]").next().next().attr("src")
 
