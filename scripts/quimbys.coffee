@@ -3,7 +3,6 @@ cheerio = require('cheerio')
 module.exports = (robot) ->
   robot.respond /quimby|JBQ/i, (msg) ->
     robot.http("http://www.jbquimbys.com/menu.php").get() (error, response, body) ->
-      msg.send body
       $ = cheerio.load(body)
       title = cleanText $("td#title").text()
       body = cleanText $("td#title").parent().next().html()
