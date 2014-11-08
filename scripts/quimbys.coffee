@@ -9,7 +9,7 @@ module.exports = (robot) ->
       body = body.split(/\<table[ \w\d"=%]+\>/)
       body = body.map (item) -> cleanItem(item)
       body = body.join("\n\n")
-      msg.send "*#{title}*\n#{body}"
+      msg.send "*#{title}*#{body}"
 
 
 cleanText = (text) ->
@@ -25,3 +25,4 @@ cleanItem = (item) ->
   cleaned = cleaned.replace /<br ?\/>/g, ""
   cleaned = cleaned.replace /<\/table>/g, "\n"
   cleaned = cleaned.replace /<\/?(tr|td|img|\!)[- \w="\/.]*>/g, ""
+  cleaned = cleaned.replace "* *", "* - *"
