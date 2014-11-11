@@ -7,7 +7,6 @@ module.exports = (robot) ->
   robot.respond /quimby|JBQ/i, (msg) ->
     request.get {url:"http://www.jbquimbys.com/menu.php", encoding: 'binary'}, (error, response, body) ->
       enc = charset(response.headers, body)
-      msg.send enc
       if enc != 'utf-8'
         html = iconv.decode(new Buffer(body, 'binary'), enc)
       else
