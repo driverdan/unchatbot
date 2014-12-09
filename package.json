@@ -27,7 +27,7 @@
     "hubot": ">= 2.5.4",
     "hubot-irc": "*",
     "hubot-scripts": ">= 2.4.6",
-    "hubot-slack": "^2.2.0",
+    "hubot-slack": "^3.0.0",
     "iconv-lite": "^0.4.4",
     "jquery": "*",
     "jsdom": "0.2.14",
