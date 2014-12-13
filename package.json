@@ -26,7 +26,7 @@
     "htmlparser": "*",
     "hubot": "2.10.0",
     "hubot-irc": "*",
-    "hubot-plusplus": "^1.1.1",
+    "hubot-plusplus": "rufo/hubot-plusplus",
     "hubot-scripts": "2.5.16",
     "hubot-slack": "^3.0.0",
     "iconv-lite": "^0.4.4",
