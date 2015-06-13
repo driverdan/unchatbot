@@ -65,6 +65,12 @@ fuckyou = [
   "http://i.imgur.com/MwTNGr8.gif"
 ]
 
+holdbutts = [
+  "http://butt.holdings/hold-onto-your-butts.gif"
+  "http://i.imgur.com/JpXxCBz.png"
+  "http://i.imgur.com/JSk5Dmn.png"
+]
+
 module.exports = (robot) ->
   robot.hear /that'?s ?racist(.gif)?$/i, (msg) ->
     msg.send msg.random thatsracist
@@ -104,3 +110,6 @@ module.exports = (robot) ->
 
   robot.hear /fuck you$/i, (msg) ->
     msg.send msg.random fuckyou
+
+  robot.hear /hold on\s?to your butts$/i, (msg) ->
+    msg.send msg.random holdbutts
