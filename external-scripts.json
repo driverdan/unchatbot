@@ -1,1 +1,8 @@
-["hubot-plusplus"]
+[
+  "hubot-humanity",
+  "hubot-plusplus",
+  "hubot-redis-brain",
+  "hubot-shipit",
+  "hubot-steamdailydeal",
+  "hubot-xkcd"
+]
