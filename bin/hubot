@@ -2,15 +2,5 @@
 
 npm install
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
-export HUBOT_AUTH_ADMIN="1371062287626"
-export HUBOT_IRC_SERVER="chat.freenode.net"
-export HUBOT_IRC_ROOMS="#unchat,#driverdan"
-export HUBOT_IRC_NICK="unchatBot"
-export HUBOT_IRC_PORT="6667"
-export HUBOT_IRC_UNFLOOD="true"
-export FILE_BRAIN_PATH="./"
-export HUBOT_BITLY_USERNAME="iamdriverdan"
-export HUBOT_BITLY_API_KEY="R_734eb6f612f98cdac1a031ac2035f652"
 
 exec node_modules/.bin/hubot "$@"
-
