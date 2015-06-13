@@ -25,7 +25,6 @@
     "cheerio": "0.7.0",
     "htmlparser": "*",
     "hubot": "2.10.0",
-    "hubot-irc": "*",
     "hubot-plusplus": "^1.1.2",
     "hubot-scripts": "2.5.16",
     "hubot-slack": "^3.2.0",
