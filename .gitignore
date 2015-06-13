@@ -2,3 +2,4 @@ node_modules
 .DS_Store
 brain-dump.json
 bin/config
+.hubot_history
