@@ -1,24 +1,18 @@
 cheerio = require('cheerio')
-iconv   = require('iconv-lite')
-charset = require('charset')
-request = require('request')
 
 module.exports = (robot) ->
   robot.respond /quimby|JBQ/i, (msg) ->
-    request.get {url:"http://www.jbquimbys.com/menu.php", encoding: 'binary'}, (error, response, body) ->
-      enc = charset(response.headers, body)
-      if enc != 'utf-8'
-        html = iconv.decode(new Buffer(body, 'binary'), enc)
+    msg.http("http://www.jbquimbys.com/menu.php").get() (error, response, body) ->
+      if error
+        msg.send error
       else
-        html = body
-      $ = cheerio.load(html)
-      title = cleanText $("td#title").text()
-      body = cleanText $("td#title").parent().next().html()
-      body = body.split(/\<table[ \w\d"=%]+\>/)
-      body = body.map (item) -> cleanItem(item)
-      body = body.join("\n\n")
-      msg.send "*#{title}*#{body}"
-
+        $ = cheerio.load(body)
+        title = cleanText $("td#title").text()
+        body = cleanText $("td#title").parent().next().html()
+        body = body.split(/\<table[ \w\d"=%]+\>/)
+        body = body.map (item) -> cleanItem(item)
+        body = body.join("\n\n")
+        msg.send "*#{title}*#{body}"
 
 cleanText = (text) ->
   cleaned = text
