@@ -90,7 +90,7 @@ module.exports = (robot) ->
   robot.hear /pops popcorn|^popcorn(.gif)?$|^popspopcorn(.gif)?$|^guspopcorn(.gif)?$|^popcorngus(.gif)?$/i, (msg) ->
     msg.send "http://i.imgur.com/GQRnYf8.gif"
 
-  robot.hear /hooray|yay\!|^yay(.gif)?$|^hooray(.gif)?$/i, (msg) ->
+  robot.hear /\bhooray\b|\byay\b/i, (msg) ->
     msg.send msg.random yay
 
   robot.hear /i ?will ?kill ?you(.gif)?$/i, (msg) ->
