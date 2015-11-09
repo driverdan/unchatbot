@@ -1,5 +1,6 @@
 [
   "hubot-humanity",
+  "hubot-markov",
   "hubot-plusplus",
   "hubot-redis-brain",
   "hubot-shipit",
