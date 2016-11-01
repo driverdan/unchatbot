@@ -16,7 +16,7 @@
 module.exports = (robot) ->
   robot.respond /\gifcities(\s+me\b)?\s*(.*)/i, (msg) ->
     query = msg.match[2] || "gif"
-    msg.http("https://wbgrp-svc060.us.archive.org/api/v1/gifsearch")
+    msg.http("https://gifcities.archive.org/api/v1/gifsearch")
       .query(q: query)
       .get() (err, res, body) ->
         if err?
