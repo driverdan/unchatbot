@@ -25,7 +25,7 @@ module.exports = (robot) ->
           console.log(body)
         if body?
           images = JSON.parse(body)
-          if images?.length > 0
+          if images?.length
             randMax = images.length - 1
             randomIndex = (Math.floor(Math.random() * randMax))
             oneImg = images[randomIndex]
