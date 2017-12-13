@@ -8,14 +8,14 @@
 #   HUBOT_SLACK_TOKEN needs to be set
 #
 # Commands:
-#   poop or shit
+#   poop, shit, crap, scat, shat
 # 
 # Author
 #   dieseltravis
 # 
 
 module.exports = (robot) ->
-  robot.hear /poo+p|shi+t/i, (msg) ->
+  robot.hear /poo+p|shi+t|cra+p|s[ch]a+t/i, (msg) ->
     queryData =  {
         token: process.env.HUBOT_SLACK_TOKEN
         name: "poop"
