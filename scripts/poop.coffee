@@ -11,7 +11,7 @@
 #   poop, shit, crap, scat, shat
 # 
 # Author
-#   dieseltravis
+#   dieseltravis, kingdonb
 # 
 
 module.exports = (robot) ->
