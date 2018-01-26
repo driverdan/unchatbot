@@ -15,7 +15,7 @@
 
 module.exports = (robot) ->
   robot.hear /\bboop\b/i, (msg) ->
-    msg.http("http://mlkshk.com/shake/boop/rss")
+    msg.http("https://mltshp.com/shake/boop/rss")
       .get() (err, res, body) ->
         if err?
           console.log(err)
