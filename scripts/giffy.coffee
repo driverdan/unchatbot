@@ -37,26 +37,17 @@ underconstruction = [
 
 orly = [
   "http://i.imgur.com/a7bmz.jpg"
-  "http://files.myopera.com/drlaunch/albums/94593/thumbs/orry001.jpg_thumb.jpg"
-  "http://i616.photobucket.com/albums/tt249/NitroSquirril/o_rly_mario_flat.png"
-  "http://img.photobucket.com/albums/v717/muserock2005/O_RLY-Quite.jpg"
   "http://www.animateit.net/data/media/august2009/th_orly.gif"
-  "http://www.brandsoftheworld.com/sites/default/files/o-rly-640x474.jpg"
 ]
 
 winner = [
   "http://drpop.org/wp-content/uploads/2010/11/wehaveawinner_img__620x300.jpg"
-  "http://www.bcon2010.com/uploaded_images/winner-701793.jpg"
-  "http://ropaxman.com/wp-content/uploads/2013/01/RoPaxman_We-have-a-winner.jpg"
-  "http://www.michelespaintshop.com/images/winner-2.gif"
-  "http://files.sharenator.com/we_have_a_winner_RE_Bear_Grylls_has_caught_on-s600x250-179219.jpg"
 ]
 
 yay = [
   "http://i.imgur.com/mBHknsc.gif"
   "http://media.tumblr.com/tumblr_ljvvxcQGj71qf86qm.gif"
   "http://media.tumblr.com/tumblr_m0f55scWAv1qmwb38.gif"
-  "http://img241.imageshack.us/img241/4059/rrw00t03.gif"
   "http://mitadmissions.org/images/mit-blogs/yay.gif"
   "http://media.tumblr.com/tumblr_m5oh7k978u1rrvu1a.gif"
 ]
