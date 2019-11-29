@@ -2,7 +2,7 @@ cheerio = require('cheerio')
 
 module.exports = (robot) ->
   robot.respond /quimby|JBQ/i, (msg) ->
-    msg.http("http://www.jbquimbys.com/menu.php").get() (error, response, body) ->
+    msg.http("https://www.jbquimbys.com/menu").get() (error, response, body) ->
       if error
         msg.send error
       else
