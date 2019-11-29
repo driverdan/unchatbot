@@ -15,11 +15,11 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "hubot": "^2.19.0",
+    "hubot-coin": "0.0.2",
     "hubot-frinkiac": "^2.2.0",
     "hubot-markov": "^2.0.0",
     "hubot-plusplus": "^1.4.0",
     "hubot-redis-brain": "^1.0.0",
-    "hubot-scripts": "~2.17.2",
     "hubot-slack": "~4.6.0",
     "hubot-xkcd": "0.0.5",
     "request": "~2.88.0",
