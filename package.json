@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "hubot": "^2.19.0",
+    "hubot": "^3.3.2",
     "hubot-coin": "0.0.2",
     "hubot-frinkiac": "^2.2.0",
     "hubot-markov": "^2.0.0",
