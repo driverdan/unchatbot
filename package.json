@@ -22,7 +22,7 @@
     "hubot-redis-brain": "^1.0.0",
     "hubot-slack": "~4.7.1",
     "hubot-xkcd": "0.0.5",
-    "request": "~2.88.0",
+    "request": "~2.88.2",
     "soupselect": "~0.2.0",
     "underscore": "~1.9.2",
     "underscore.string": "~3.3.5"
