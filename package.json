@@ -17,7 +17,7 @@
     "hubot": "^3.3.2",
     "hubot-coin": "0.0.2",
     "hubot-frinkiac": "^2.2.1",
-    "hubot-markov": "^2.1.3",
+    "hubot-markov": "^2.2.0",
     "hubot-plusplus": "^1.4.0",
     "hubot-redis-brain": "^1.0.0",
     "hubot-slack": "~4.8.0",
