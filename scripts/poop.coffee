@@ -15,7 +15,7 @@
 # 
 
 module.exports = (robot) ->
-  robot.hear /poo+p|shi+t|cra+p|s[ch]a+t/i, (msg) ->
+  robot.hear /chorn|poo+p|shi+t|cra+p|s[ch]a+t/i, (msg) ->
     queryData =  {
         token: process.env.HUBOT_SLACK_TOKEN
         name: "poop"
