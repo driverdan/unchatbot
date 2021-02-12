@@ -13,7 +13,7 @@
     "url": "https://github.com/driverdan/unchatbot.git"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.5",
     "hubot": "^3.3.2",
     "hubot-coin": "0.0.2",
     "hubot-frinkiac": "^2.2.1",
