@@ -20,7 +20,7 @@
     "hubot-markov": "^2.2.2",
     "hubot-plusplus": "^1.4.0",
     "hubot-redis-brain": "^1.0.0",
-    "hubot-slack": "~4.8.0",
+    "hubot-slack": "~4.9.0",
     "hubot-xkcd": "0.0.5",
     "request": "~2.88.2",
     "soupselect": "~0.2.0",
