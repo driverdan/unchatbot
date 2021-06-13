@@ -6,10 +6,3 @@ updates:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: underscore
-    versions:
-    - 1.13.0
-  - dependency-name: hubot-markov
-    versions:
-    - 2.2.1
