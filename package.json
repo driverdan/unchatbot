@@ -24,7 +24,7 @@
     "hubot-xkcd": "0.0.5",
     "request": "~2.88.2",
     "soupselect": "~0.2.0",
-    "underscore": "~1.13.2",
+    "underscore": "~1.13.3",
     "underscore.string": "~3.3.6"
   },
   "engines": {
